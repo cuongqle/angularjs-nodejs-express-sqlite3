@@ -23,14 +23,17 @@ please be aware that if you change these information, please also change it in a
 /**
  * default values define
  */
-var AuctionDefaultValues = {
+var AuctionDefaultValues = 
+{
 	locale: window.navigator.userLanguage || window.navigator.language,	
 	host: 'http://127.0.0.1:9081'
 };
 
+You can refer Document.docx for more detail.
+
 Just download code and enjoy it.
 
-Thank you!
+
 
 
 
