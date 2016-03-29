@@ -1,5 +1,33 @@
 {
-	"scripts": {
-	  "test": "mocha test"
-	}
+  "scripts": {
+    "test": "mocha test"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "auctionbackend",
+  "main": "auctionserver.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "chai": "^3.5.0",
+    "cors": "^2.7.1",
+    "socket.io": "^1.4.5",
+    "cookie-parser": "^1.4.1",
+    "supertest": "^1.2.0",
+    "sinon": "^1.17.3",
+    "sqlite3": "^3.1.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuongqle/angularjs-nodejs-express-sqlite3/tree/master/backend"
+  },
+  "author": "cuongqle",
+  "license": "ISC"
 }
