@@ -17,7 +17,7 @@ time for you:
 http://www.codeproject.com/Articles/280137/How-To-Deploy-a-Web-App-in-IIS
 
 PS:
-In auction.js, there is a place to configure host url, by default, out server will be host under 127.0.0.1 address and listening port 9081,
+In auction.js, there is a place to configure host url, by default, our server will be hosted under 127.0.0.1 address and listening port 9081,
 please be aware that if you change these information, please also change it in auction.js file at this place of code:
 
 var AuctionDefaultValues = 
