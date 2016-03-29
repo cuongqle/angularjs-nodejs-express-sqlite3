@@ -1,0 +1,35 @@
+<div class="content-wrap">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="cancel()"></button>
+        <h4 class="modal-title">
+            <span class="glyphicon"></span>
+            Start Auction
+        </h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+        	<div class="col-md-12">
+				<div class="col-md-3">
+					<label>Quantity</label>
+				</div>
+				<div class="col-md-9">
+					<input type="number" class="form-control" ng-model="auction.quantity" />
+				</div>
+			</div>
+        </div>
+        <div class="row">
+	        <div class="col-md-12">
+				<div class="col-md-3">
+					<label>Minimum</label>
+				</div>
+				<div class="col-md-9">
+					<input type="number" class="form-control" ng-model="auction.minimum" />
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn ems-btn" ng-click="onStart()">Start Auction</button>
+        <button class="btn ems-btn" ng-click="onCancel()">Cancel</button>
+    </div>
+</div>

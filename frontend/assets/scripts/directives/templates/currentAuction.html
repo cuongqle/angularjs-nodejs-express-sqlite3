@@ -1,0 +1,41 @@
+<div class="table-auction">
+	<div class="header">
+		<div class="col-md-12">
+			<h3> Current Auction</h3>
+		</div>
+	</div>
+	<div class="content" ng-show="!!auction">
+		<div class="form-group">
+			<label>Seller:<span>{{auction.seller}}</span></label>
+		</div >
+		<div class="form-group col-md-12">
+			<div class="col-md-6 center">
+				<figure>
+				  <img src="assets/images/images.png" width="60" height="60">
+				  <figcaption>{{auction.item.name}}</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-6 center vertical">
+				<label>Quantity</label>
+				<h4>{{auction.quantity}}</h4>
+			</div>
+		</div >
+		<div class="form-group" style="clear: both;">
+			<label>Time left:<span>{{auction.timeleft}}</span><span>seconds</span></label>
+		</div>
+		<div class="form-group">
+			<label>{{auction.winningbid==0 ? 'Minimum bid' : 'Winning bid'}}:<span>{{auction.winningbid == 0 ? auction.minimum : auction.winningbid}}</span></label>
+		</div>
+		<div class="form-group center">
+			<input type="number" ng-model="amount"/>
+		</div>
+		<div class="form-group center">
+			<button ng-click="onBid()">Place Bid</button>
+		</div>
+	</div>
+	<div class="content" ng-show="!auction">
+		<div class="form-group">
+			<label>No auction at the moment.</label>
+		</div >
+	</div>
+</div>

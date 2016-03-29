@@ -1,0 +1,27 @@
+<div class="table-inventory">
+	<div class="header">
+		<div class="col-md-12">
+			<h3> Inventory</h3>
+		</div>
+	</div>
+	<div class="content">
+		<div ng-repeat="item in user.inventory">
+			<div class="row">
+				<div class="col-md-4 center">
+					<figure>
+					  <img src="assets/images/images.png" width="60" height="60">
+					  <figcaption>{{item.name}}</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 center vertical">
+					<label>Quantity</label>
+					<h4>{{item.quantity}}</h4>
+				</div>
+				<div class="col-md-4 center">
+					<i class="fa fa-bullhorn"></i><br>
+					<button ng-click="onStartAuction(item)">Auction</button>
+				</div>
+			</div >  
+		</div>
+	</div>
+</div>
