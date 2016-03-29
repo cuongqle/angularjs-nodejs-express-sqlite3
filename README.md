@@ -1,5 +1,5 @@
 # angularjs-nodejs-express-sqlite3
-A small Auction game using [Angularjs+bootstrap3] to build frontend and [Nodejs+Express+Socket.io+sqllite3] to build backend
+A small Auction game using [Angularjs+bootstrap3] to build frontend and [Nodejs+Express+Socket.io+sqllite3] to build backend which using Socket.io for real-time communication between clients
 
 1- Description:
 
